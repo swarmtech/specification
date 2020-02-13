@@ -1,0 +1,17 @@
+{
+  "name": "swarmtech/specification",
+  "description": "Swarmtech Specification",
+  "homepage": "https://www.swarmtech.fr",
+  "license": "MIT",
+  "keywords": [
+    "specification",
+    "specification pattern",
+    "domain driven development",
+    "ddd"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Swarmtech\\Specification\\": "src/"
+    }
+  }
+}
