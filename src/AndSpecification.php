@@ -11,7 +11,7 @@ class AndSpecification implements SpecificationInterface
         $this->specifications = $specifications;
     }
 
-    public function isSatisfied(): bool
+    public function isSatisfied()
     {
         foreach ($this->specifications as $specification) {
             /** @var SpecificationInterface $specification */
