@@ -9,9 +9,17 @@
     "domain driven development",
     "ddd"
   ],
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  },
   "autoload": {
     "psr-4": {
       "Swarmtech\\Specification\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SwarmtechTest\\Specification\\": "test/"
     }
   }
 }
