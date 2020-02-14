@@ -2,10 +2,10 @@
 
 namespace SwarmtechTest\Specification\Fixture\Specification;
 
-use Swarmtech\Specification\AbstractSpecification;
+use Swarmtech\Specification\SpecificationInterface;
 use SwarmtechTest\Specification\Fixture\Entity\User;
 
-class UserIsMajorSpecification extends AbstractSpecification
+class UserIsMajorSpecification implements SpecificationInterface
 {
     private $user;
 
@@ -16,6 +16,6 @@ class UserIsMajorSpecification extends AbstractSpecification
 
     public function isSatisfied()
     {
-        return $this->user->age > 18;
+        return $this->user->age >= 18;
     }
 }

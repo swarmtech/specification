@@ -2,10 +2,10 @@
 
 namespace SwarmtechTest\Specification\Fixture\Specification;
 
-use Swarmtech\Specification\AbstractSpecification;
+use Swarmtech\Specification\SpecificationInterface;
 use SwarmtechTest\Specification\Fixture\Entity\User;
 
-class UserIsFrenchSpecification extends AbstractSpecification
+class UserIsFrenchSpecification implements SpecificationInterface
 {
     private $user;
 

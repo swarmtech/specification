@@ -1,9 +1,8 @@
 <?php
+
 namespace Swarmtech\Specification;
 
-use Swarmtech\Specification\AbstractSpecification;
-
-class NotSpecification extends AbstractSpecification implements SpecificationInterface
+class NotSpecification implements SpecificationInterface
 {
     private $specification;
 
@@ -14,6 +13,6 @@ class NotSpecification extends AbstractSpecification implements SpecificationInt
 
     public function isSatisfied(): bool
     {
-        return ! $this->specification->isSatisfied();
+        return !$this->specification->isSatisfied();
     }
 }

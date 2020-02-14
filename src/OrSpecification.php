@@ -2,7 +2,7 @@
 
 namespace Swarmtech\Specification;
 
-class OrSpecification extends AbstractSpecification implements SpecificationInterface
+class OrSpecification implements SpecificationInterface
 {
     private $specifications;
 
@@ -15,7 +15,7 @@ class OrSpecification extends AbstractSpecification implements SpecificationInte
     {
         foreach ($this->specifications as $specification) {
             /** @var SpecificationInterface $specification */
-            if (!$specification->isSatisfied()) {
+            if ($specification->isSatisfied()) {
                 return true;
             }
         }

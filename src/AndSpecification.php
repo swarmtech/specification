@@ -2,9 +2,9 @@
 
 namespace Swarmtech\Specification;
 
-class AndSpecification extends AbstractSpecification implements SpecificationInterface
+class AndSpecification implements SpecificationInterface
 {
-    protected $specifications;
+    private $specifications;
 
     public function __construct(array $specifications)
     {
@@ -15,7 +15,7 @@ class AndSpecification extends AbstractSpecification implements SpecificationInt
     {
         foreach ($this->specifications as $specification) {
             /** @var SpecificationInterface $specification */
-            if (! $specification->isSatisfied()) {
+            if (!$specification->isSatisfied()) {
                 return false;
             }
         }
